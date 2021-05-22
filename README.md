@@ -1,5 +1,5 @@
 # clone-Trilio-flex-box
 
-## flow
+## Work Flow
 
-[x]
+  1. Defining Project Settings and Custom properties 
