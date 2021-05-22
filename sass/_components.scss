@@ -126,12 +126,39 @@
 ///////////////////////////////////
 // SIDE NAV
 .side-nav {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   list-style: none;
   margin-top: 3.5rem;
 
   &__item {
+    position: relative;
+  }
 
+  &__item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+
+    background-color: var(--color-primary);
+
+    transform: scaleY(0);
+    transition: transform .2s,
+                width .4s cubic-bezier(1,0,0,1) .2s,
+                background-color .1s;
+  }
+
+  &__item:hover::before,
+  &__item--active::before {
+    width: 100%;
+    transform: scaleY(1);
+  }
+
+  &__item:active::before {
+    background-color: var(--color-primary-light);
   }
 
   &__link:link,
@@ -144,13 +171,16 @@
     align-items: center;
 
     padding: 1.5rem 3rem;
+    //z-index는 position을 명시해주었을 때 동작한다.
+    position: relative;
+    z-index: 10;
   }
 
   &__icon {
     width: 1.75rem;
     height: 1.75rem;
     margin-right: 2rem;
-
+    fill: currentColor;
   }
 }
 
