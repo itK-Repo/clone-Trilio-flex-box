@@ -369,3 +369,38 @@
     }
   }
 }
+
+///////////////////////////////////
+// REVIEWS
+.review {
+  background-color: #fff;
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  box-shadow: var(--shadow-light);
+
+  &__text {
+    margin-bottom: 2rem;
+  }
+  &__user {
+    display: flex;
+    align-items: center;
+  }
+  &__photo {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+  }
+  &__user-box {
+    margin-right: auto;
+  }
+  &__user-name {
+    
+  }
+  &__user-date {
+
+  }
+  &__rating {
+
+  }
+}
+
