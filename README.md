@@ -2,5 +2,6 @@
 
 ## Work Flow
 
-  1. Defining Project Settings and Custom properties 
-  2. Building the Overall Layout
+  - Defining Project Settings and Custom properties
+
+  - Building the Overall Layout
